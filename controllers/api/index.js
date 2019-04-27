@@ -6,12 +6,12 @@
 const express = require('express'),
       router = express.Router(),
       request = require('request'),
-      cheerio = require('cheerio'),
       Article = require('../../models/article'),
       Note = require('../../models/note');
-      axios = require('axios'),
+      
 
-router.get('/', function(req, res) {
+router.get('/index', function(req, res) {
+    res.render('main');
     res.status(200).send('<a href=\'/api/articles/\'>articles</a><br><a href=\'/api/notes/\'>notes</a>');
 });
 

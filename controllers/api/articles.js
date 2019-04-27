@@ -2,13 +2,12 @@
 const express = require('express'),
       router = express.Router(),
       request = require('request'),
-      cheerio = require('cheerio'),
       Article = require('../../models/article');
-      axios = require('axios'),
+      
      
 
 // get all articles from database
-router.get('/', function(req, res) {
+router.get('/index', function(req, res) {
     Article
         .find({})
         .exec(function(error, docs) {

@@ -8,8 +8,6 @@ const express = require('express'),
       logger = require('morgan'),
       mongoose = require('mongoose'),
       methodOverride = require('method-override');
-      axios = require('axios'),
-      cheerio = require('cheerio')
 
 // set up express app
 // =============================================================

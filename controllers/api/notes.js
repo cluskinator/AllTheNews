@@ -5,13 +5,11 @@
 const express = require('express'),
       router = express.Router(),
       request = require('request'),
-      axios = require('axios'),
-      cheerio = require('cheerio'),
       Article = require('../../models/article'),
       Note = require('../../models/note');
 
 // get all notes
-router.get('/', function(req, res) {
+router.get('/index', function(req, res) {
     Note
         .find({})
         .exec(function(err, notes) {
