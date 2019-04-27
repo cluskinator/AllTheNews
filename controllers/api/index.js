@@ -8,6 +8,7 @@ const express = require('express'),
       request = require('request'),
       Article = require('../../models/article'),
       Note = require('../../models/note');
+      cheerio = require('cheerio');
       
 
 router.get('/index', function(req, res) {

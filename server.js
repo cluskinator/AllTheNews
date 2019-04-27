@@ -8,6 +8,7 @@ const express = require('express'),
       logger = require('morgan'),
       mongoose = require('mongoose'),
       methodOverride = require('method-override');
+      cheerio = require('cheerio');
 
 // set up express app
 // =============================================================
@@ -31,7 +32,7 @@ app
 // set mongoose to leverage promises
 mongoose.Promise = Promise;
 
-const dbURI = process.env.MONGODB_URI || "mongodb://localhost:27017/newsArticles";
+const dbURI = process.env.MONGODB_URI || "mongodb://localhost:8000/newsArticles";
 
 // Database configuration with mongoose
 mongoose.set('useCreateIndex', true)
