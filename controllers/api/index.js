@@ -7,7 +7,7 @@ const express = require('express'),
       router = express.Router(),
       request = require('request'),
       Article = require('../../models/article'),
-      Note = require('../../models/note');
+      Note = require('../../models/note'),
       cheerio = require('cheerio');
       
 

@@ -2,7 +2,7 @@
 const express = require('express'),
       router = express.Router(),
       request = require('request'),
-      Article = require('../../models/article');
+      Article = require('../../models/article'),
       cheerio = require('cheerio');
       
      

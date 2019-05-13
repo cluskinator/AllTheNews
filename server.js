@@ -7,7 +7,7 @@ const express = require('express'),
       bodyParser = require('body-parser'),
       logger = require('morgan'),
       mongoose = require('mongoose'),
-      methodOverride = require('method-override');
+      methodOverride = require('method-override'),
       cheerio = require('cheerio');
 
 // set up express app

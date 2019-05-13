@@ -5,7 +5,7 @@
 // =============================================================
 const express = require('express'),
       router = express.Router(),
-      Article = require('../models/article');
+      Article = require('../models/article'),
       cheerio = require('cheerio');
 
 // root route
